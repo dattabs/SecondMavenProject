@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Rel1.0 Suite">
+<!-- <!-- <suite name="Rel1.0 Suite" parallel="methods" thread-count="2"> -->
+	<listeners>
+		<listener class-name="RetryAnalyzer.AnnotationTransformerEx" />
+	</listeners> -->
+
+	<test thread-count="5" name="Functional Test">
+		<classes>
+			<!-- <class name="SecondMavenProject.SecondMavenProject.ParallelTestExecution" /> -->
+			<class name="SecondMavenProject.SecondMavenProject.DependsOnMethodTest" />
+			<!-- <class name="SecondMavenProject.SecondMavenProject.RetryFailedTestCasesTest" /> -->
+			<!-- <class name="SecondMavenProject.SecondMavenProject.Annotations"/>  -->
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
